@@ -13,7 +13,7 @@
         </thead>
         <tbody>
             <% categories.forEach(category => { %>
-                <tr onclick="window.location.href = `/categories/<%=category.id%>`">
+                <tr">
                     <td><%= category.name %></td>
                 </tr>
             <% }) %>
