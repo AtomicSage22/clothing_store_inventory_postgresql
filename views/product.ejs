@@ -1,0 +1,17 @@
+<!-- src/views/products/show.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= product.name %> - Product Details</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1><%= product.name %></h1>
+    <p><strong>Description:</strong> <%= product.description %></p>
+    <p><strong>Category:</strong> <%= product.category_name %></p>
+    <p><strong>Brand:</strong> <%= product.brand_name %></p>
+    <p><strong>Price:</strong> $<%= product.price %></p>
+
+    <a href="/">Back to Products</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Categories</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>All Brands</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% brands.forEach(brand => { %>
+                <tr onclick="window.location.href = `/brands/<%=brand.id%>`">
+                    <td><%= brand.name %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a class="addButton" href="/brands/add">Add New Category</a>
+</html>
